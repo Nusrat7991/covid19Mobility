@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+		body{
+			background-color: azure;
+
+		}
+        svg{
+            height: 65vh;
+             width: -webkit-fill-available;
+        }
+
+		.data{
+			
+			display: flex;	
+			place-content: center;
+			grid-column-gap: 5% ;
+			grid-template-columns: 25% 25% 25% 25%;
+			text-align: center;
+			font-size: 3vh;
+			margin-bottom: 30px;
+			color: green;
+        
+		}
+	.Bangladesh{
+		text-align: center;
+        font-size: 5vh;
+        color: red;
+        margin-bottom: 30px;
+	}
+
+	.District{
+		text-align: center;
+        font-size: 4vh;
+        color: red;
+        margin-bottom: 30px;
+	}
+	.hover{
+text-align: center;
+
+	}
+  .bd{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+		<div class="Bangladesh">Bangladesh Map</div>
+		
+    <div class="hover">HOVER MOUSE ON MAP</div>
+    <div class="bd"> <a href="index.html"><img src="BD.png" alt="" width="30" ></a></div>
+
+
+		<div class="District">Barisal</div>
+        <div class="data">
+		
+			  <div class="confirmed">
+				<div class="caseConfirmed">Elder population %</div>
+				<div class="caseFigConfirmed">...</div>
+			  </div>
+			  <div class="recod">
+				<div class="caseRecod">People That Stayed Put %</div>
+				<div class="caseFigRecod">...</div>
+			  </div>
+			  <div class="total">
+				<div class="casetotal">Population Density (Per Sqr Km)</div>
+				<div class="caseFigtotal">...</div>
+			  </div>
+			  
+			</div>
+            <div class="map">
+                <svg id="svg1895" xmlns="http://www.w3.org/2000/svg" viewBox="50 340 350 180">
+                    <defs>
+                    <style>
+                        .land
+                        {
+                            fill: #17520d;
+                            fill-opacity: 1;
+                            stroke-opacity: 1;
+                            stroke:#fff;
+                            stroke-width:0.15;
+                            
+                        }
+                        
+                    </style>
+                    </defs>
+                  
+             
+                    
+              <g id="layer1">      
+                <path id="Pirojpur" class="land" d="M191.5,470.19l-.71-5.28-2.13-2.82.35-5.29,2.85-4.93-.71-3.17v-4.93l2.49-2.82h1.42l-1.78-1.77L189,432.49l5,2.82,3.2,2.82-.35-3.17-1.43-3.88,1.78-2.47-1.78-4.93v-5.29L194,417l-5-.7-.35-3.88,5.69-2.11v-6l-.36-1.41.71-1.06.36-2.47,5.33.71,1.78-2.47h.36l2.49,3.17-.36,3.53h1.78l2.13,3.17h2.14l.71,2.11,5.33,1.06,2.49.71-.36,1.76-1.42.35v1.76L215,417l-.71,2.82-3.91,2.47,2.13,2.11v2.82l-3.55.71v7l5.69,1.05.71.71-.71,1.76L211.06,442l-2.13-1.76-1.78,1.06L205,440.24l.35,4.23-2.13,3.17.35,2.82,2.14-1.06.71,4.23-1.07,2.12-1.07,4.93-2.49,4.58-2.48.35-4.27,4.58Z" transform="translate(-16.64 -22.77)"
+                onmouseover="document.querySelector('#Pirojpur').style.fill= 'red'; showMapData('Pirojpur')"
+						onmouseout="document.querySelector('#Pirojpur').style.fill= '#17520d'";/>
+
+                <path id="Jhalokati" class="land" d="M205.73,449.4,204,450.81l-.71-2.82,2.49-3.17-1.07-5.28,2.13,2.11,2.49-1.41,1.43,1.41,4.26-2.82.36-2.11L209.64,435l-.36-6.7,3.56-1.06v-2.46l-2.49-2.82,3.91-2.12.36-2.82,3.2-1.76-.36-1.05,1.78-.71.36-1.76-2.49-1.41,2.49-2.12,1.42-.7.71,2.11h2.13l1.43-.7,2.84,3.17-1.07,1.41-.35,1.76.71,1.06h2.13l1.07,1.76,6,1.06.35,1.41-1.78.35-1.06,1.76,3.91.71.35,1.76-3.2.7s.71,2.12-.71,2.12a5,5,0,0,1-2.84-1.41l-1.07,1.41-2.13-.35-1.07,2.11-.71,2.11-2.49,1.06-3.91,2.47-2.49,1.76-.36,2.47-.71,4.23-2.84,1.76-1.43,3.17-1.77,2.11-5-1.41Z" transform="translate(-16.64 -22.77)"
+                onmouseover="document.querySelector('#Jhalokati').style.fill= 'red'; showMapData('Jhalokati')"
+						onmouseout="document.querySelector('#Jhalokati').style.fill= '#17520d'";/>
+                
+                <path id="Barisal" class="land" d="M217.82,436.37l4.62-2.47,4.62-2.12,1.43-3.87h2.13l.71-1.06,4.27,1.06.71-2.47h2.49l-.36-2.11-4.26-.71,1.06-2.11,1.78.35-.35-1.76-5.69-.71-1.43-1.76-2.84-.35.35-2.11,1.43-1.06-3.2-3.88H222.8l-1.43-1.76-4.62,2.82-5.69-1.06-.35-1.41h-1.43l-2.13-3.52h-2.49l.36-3.53L202.88,398v-4.23l3.2-3.53.36-1.76,3.2-1.76.71-1.76,3.2-.36v-4.22l4.27.35,1.42-2.12,1.78.71-.36,8.46,5,2.11,2.85-.7,1.77-1.06,2.14,1.41,1.06-2.47,4.27-2.11,5,1.05,5,2.82,3.56,3.17,4.26,1.77,4.27,1.76,3.2,2.82,2.13,4.93L263,405.71l-3.55,1.76-6.05,4.23-3.2,3.17-.36,2.47-4.26.7,2.49,3.88L247,424.74l.35,3.17,1.43,2.11-4.27.35-3.91,2.12V435l-.71,2.46-2.49-.7-2.14-.35-4.62-2.12-2.49,1.41-.36,1.76-4.26,1.76-.36-3.17-5.33.36Z" transform="translate(-16.64 -22.77)"
+                onmouseover="document.querySelector('#Barisal').style.fill= 'red'; showMapData('Barisal')"
+						onmouseout="document.querySelector('#Barisal').style.fill= '#17520d'";/>
+                
+                <path id="Barguna" class="land" d="M218.59,435.92l5,.5-.5,2.49,5-1.5v-1l3-2,3.52,1.5-1,4-3.52.5-3.52,5,1.5,4-1,3-5,1-2,3.49-.5,4,1.5,2,4.53-4.49,2.51-1,2,1,8.55.5.5,3.49-5,5-1.51,3,3.52,2v3l-3.52,6-3,3.49v7.47l-5,6,.51,5.48-4.53,1.5-4,2.49-4.53-1-3.52-3L202,502.2l1.51-2.49-2-2.5s-2-5.48.5-5.48,6-2,6-2l-3.52-1.5-3.52-.49.5-5,2.51-3-1.5-2.49L201,480.77l-2.52.5-.5,3.49,1.51,1.49-2.52,3-4-6.48-1-5v-7h0l5-2.49,2.52-3,2,1,3.52-7.48,1.51-4-1-4.48,5,.5,3.52-4.49,3-2,.5-4,1-4.48Z" transform="translate(-16.64 -22.77)"
+                onmouseover="document.querySelector('#Barguna').style.fill= 'red'; showMapData('Barguna')"
+						onmouseout="document.querySelector('#Barguna').style.fill= '#17520d'";/>
+                
+                <path id="Patuakhali" class="land" d="M251.78,490.74l-4.52,4.48-1.51,4.49,4,2,3-3.49-1-3.49v-4Zm-5.53-8.48,4.53-3,1.51,3-.51,3.49-3,3.49-2.51,2.49v-9.47Zm-10.06-2.49,5,2.49,2.52,2.5.5,4-1.51,4.49-2.51,3.49-5.54-2.5-1.51,3.49-1.5,5-3.52,1.49,1-5.48,2-4v-4.48l2-4,3-6.48Zm-1.51-2.49,1-5-3.52-2,5.53-6,1.51-1.49-1-4-7.54.5-2.52-1.5-7,4-1-2.49.5-5,6.54-1.5,1-3-2-4.48,4-4.49,3-.5,1.51-4,4.53.49,1.51-4.48,7-2,.5-3.49,3.52,3.49,3,4-.5,5,4,1.49,2.51,8-3.52,2v4.48l-3,6-2,5.49-1,3,1,7-9.06,3-8.55-2.49Z" transform="translate(-16.64 -22.77)"
+                onmouseover="document.querySelector('#Patuakhali').style.fill= 'red'; showMapData('Patuakhali')"
+						onmouseout="document.querySelector('#Patuakhali').style.fill= '#17520d'";/>
+                
+                <path id="Bhola" class="land" d="M263.85,486.75l-1.51,4h5ZM289,449.87l-2,6.48-2.52,7.48v7l5,5.48V463.33l2.52-6.48.5-3.49L289,449.87Zm-35.71,23.42,4.53-5,4-6,.5-9-.5-6.48-2-5.48-2-5.48v-5.48l-3.52-3-3.52-4,.5-4.49,3-5,4.52-2.49,2-2.49,7.05-.5,1.5,5.48,3,11,5,6,3.52,4.49,2,3-.5,5.48-1.51,1.5v6.47l-2,4.49-1,3.49-1,4.48v8l-3.52,2.49-2,4-6,2-.5,3-3,1.49-4,2.5a2.5,2.5,0,0,1-1.51-2.5,10.81,10.81,0,0,0-1.51-4.48l2.51-3.49-4-4Zm3,20.93,2.51-3.48,3,4-2,2Z" transform="translate(-16.64 -22.77)"
+                onmouseover="document.querySelector('#Bhola').style.fill= 'red'; showMapData('Bhola')"
+						onmouseout="document.querySelector('#Bhola').style.fill= '#17520d'";/>
+                
+
+                   
+                    
+                    <path id="path3159" class="land" d="M117.62,522.8a1,1,0,0,1-.44-.76c0-.46.17-.46.64,0a1.08,1.08,0,0,1,.36.75c0,.22,0,.39-.05.39a2.56,2.56,0,0,1-.51-.39Z" transform="translate(-16.64 -22.77)"/>
+                  </g></svg>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+      function showMapData(District) {
+             console.log(District);
+             fetch("./district.json")
+               .then((e) => {
+                 return e.json();
+               })
+               .then((data) => {
+                 for (var i in data.Sheet1) {
+                   if (data.Sheet1[i].District == District) {
+                     document.querySelector(".District").innerHTML = District;
+                 
+                     document.querySelector(".caseFigConfirmed").innerHTML =  data.Sheet1[i].PercentElder;
+                     document.querySelector(".caseFigRecod").innerHTML =   data.Sheet1[i].Stayput;
+     
+               document.querySelector(".caseFigtotal").innerHTML =  data.Sheet1[i].TotalPopdis;
+                 
+                   }
+                 }
+               });
+           }
+         </script>
+</body>
+</html>

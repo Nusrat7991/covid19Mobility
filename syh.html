@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+		body{
+			background-color: azure;
+
+		}
+        svg{
+            height: 65vh;
+             width: -webkit-fill-available;
+        }
+
+		.data{
+			
+			display: flex;	
+			place-content: center;
+			grid-column-gap: 5% ;
+			grid-template-columns: 25% 25% 25% 25%;
+			text-align: center;
+			font-size: 3vh;
+			margin-bottom: 30px;
+			color: green;
+        
+		}
+	.Bangladesh{
+		text-align: center;
+        font-size: 5vh;
+        color: red;
+        margin-bottom: 30px;
+	}
+
+	.District{
+		text-align: center;
+        font-size: 4vh;
+        color: red;
+        margin-bottom: 30px;
+	}
+	.hover{
+text-align: center;
+
+	}
+  .bd{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+		<div class="Bangladesh">Bangladesh Map(Districts)</div>
+		<div class="hover">HOVER MOUSE ON MAP</div>
+    
+    <div class="bd"> <a href="index.html"><img src="BD.png" alt="" width="30" ></a></div>
+
+		<div class="District">Sylhet</div>
+        <div class="data">
+		
+			  <div class="confirmed">
+				<div class="caseConfirmed">% of People Age 65+</div>
+				<div class="caseFigConfirmed">...</div>
+			  </div>
+			  <div class="recod">
+				<div class="caseRecod">% of People Staying put</div>
+				<div class="caseFigRecod">...</div>
+			  </div>
+			  <div class="total">
+				<div class="casetotal">Population Density (Per Sq Km)</div>
+				<div class="caseFigtotal">...</div>
+			  </div>
+			  
+			</div>
+            <div class="map">
+                <svg id="svg1895" xmlns="http://www.w3.org/2000/svg" viewBox="260 125 150 180">
+                    <defs>
+                    <style>
+                        .land
+                        {
+                            fill: #17520d;
+                            fill-opacity: 1;
+                            stroke-opacity: 1;
+                            stroke:#fff;
+                            stroke-width:0.15;
+                            
+                        }
+                        
+                    </style>
+                    </defs>
+                  
+             
+                    
+              <g id="layer1">      
+                
+                <path id="Sunamganj" class="land" d="M313.83,227.05v-2.82l5-4.23-2.13-3.52-4.62-1.41-2.49-1.41.71-3.17,2.13-1.06,1.07-2.47-1.42-2.46-1.07-.71-2.49,3.52-1.42-2.46.35-2.82-2.13-3.17-6.05-.71L296.76,195l-5-.7v-4.59l-1.43-3.17v-3.87l1.78-1.76-3.55-1.06.71-1.41,3.55-.35L291.08,176l.71-6.69.71-1.77,5.69-1.05h3.91l5,1.05,9.6-1.76,8.89,4.58,1.42-1.76,4.27,1.41,4.62,2.82h3.2l1.43-1.41,2.49.71,5.33-2.82v2.82l1.78.35,1.06,2.11,5.34-1.41,2.13.36-.71,2.11,2.85,2.47.35,3.17-1.78,2.11v1.06l3.92,3.88-.36,1.4-1.07.36v1l2.14,1.06V195l-2.14,4.23v1.06l2.14,2.82-3.56.7-1.78,2.11,2.14,4.59-2.14.7,2.14,3.17-3.2,6.35-5.34-.71-.35,1.76,1.06,1.06-1.42,1.06-1.42-1.77h-2.85l-4.62-1.05-1.42,1.41,1.42,1.41L340.15,226l-5-3.88-.35-2.11-2.85-.35-3.2,2.82-3.2,1.76.36,2.82-.72,1.76-2.13-1.41-3.2,2.82-2.84.7-3.21-3.87Z" transform="translate(-16.64 -22.77)"
+                    onmouseover="document.querySelector('#Sunamganj').style.fill= 'red'; showMapData('Sunamganj')"
+                    onmouseout="document.querySelector('#Sunamganj').style.fill= '#17520d'";/>
+
+                <path id="Sylhet" class="land" d="M357.22,220.7l3.91-6.69-2.49-3.17,2.14-.35L359,205.55l2.49-2.11h2.84l-2.84-3.53,2.49-4.22.35-3.53-2.84-1.76,1.78-1.76-3.56-4.23V183l1.42-1.41v-3.52l-2.84-2.47.35-1.76-2.13-1.76,1.07-1.77h1.06l3.2,1.06L364,168.9l10.67.36,6.4-1.06,2.49,2.11,2.13-2.82h5.69l3.91,1.41,3.2,3.88,1.42-.35,1.43,1.06,1.42-.71,2.49,1.41V176l1.78.35,4.26,2.12,2.85.7,1.07-1.05h1.42v2.82l3.91,1.05,3.56,2.12-.71,2.11,1.42,3.17,3.2,1.06-1.42,1.76,3.2.35,1.42,2.12-.36,5.28h-1.42l-1.42-.7-2.14,2.11-4.26-.35-6-1.06L412,201l-2.85,1.76,2.49,2.82-.36,2.47-3.2,6h-2.49l-5.33.7-1.42-2.81h-1.78l-.36,2.46-1.42,4.58-3.55,2.82-1.78.71-4.27,1.05-1.78-1.41-2.13,1.41-2.49-.35-1.07-1.76-2.49,1.41-1.78-1.76-2.13,2.46L369,227.4l-5.69.35-1.07-2.46-3.56-.36,1.43-2.11-2.85-2.12Z" transform="translate(-16.64 -22.77)"
+                    onmouseover="document.querySelector('#Sylhet').style.fill= 'red'; showMapData('Sylhet')"
+                    onmouseout="document.querySelector('#Sylhet').style.fill= '#17520d'";/>
+
+                <path id="Habiganj" class="land" d="M310.28,261.23l2.13-.71L311,258.41l-1.42-.7.71-2.12,4.27.35,2.49-1.05v-2.47l-1.43-1.76,2.49-.71-.35-2.11L315.26,245l1.42-1.76.36-2.47-.72-1.41-1.77-1.06-2.14,1.06-2.49-1.06,5-1.76,1.78-4.93,3.56-2.47,2.49-2.46,2.48,2.81,1.07-2.11-1.07-2.47,2.49-3.52,4.63-1.41h1.77l2.49,2.11,2.85,4.23,1.78-2.82v-1.05l1.78-1.41,1.42.7,5.69-.7,1.42,3.17,1.78-.71-1.42-1.76V220l4.62.7,4.27,1.06-2.14,3.17,3.56.36.71,1.76-2.49,2.82-2.49-1.76-2.13-.36-1.07.71,2.13,3.52,2.14,1.41h-2.14l-2.48,1.76-.72,5.64L353,251l2.14,6L353,263l-1.42,1.06v1.06l1.78,1.41v1.4l-1.42.71V276l-4.63,2.82-5,.7-3.2-2.46h-3.91l-3.55-1.77h-3.2l-.72,2.12,2.14,2.82-.71,2.47-1.78,2.46-1.07,3.53L321,287.31v-2.47l1.06-.71-.71-2.81-2.84-6,3.55-1.05-2.84-1.41v-4.23l3.91,1.06v-2.12l-3.2-1.41,5-3.52v-2.12l-3.2-.7-3.2,5.64-2.85-2.12-5.33-2.11Z" transform="translate(-16.64 -22.77)"
+                    onmouseover="document.querySelector('#Habiganj').style.fill= 'red'; showMapData('Habiganj')"
+                    onmouseout="document.querySelector('#Habiganj').style.fill= '#17520d'";/>
+
+                <path id="Maulvibazar" class="land" d="M352.6,263.7l2.49-6.7-2.49-5.64,1.78-16.21,2.13-1.41,3.91.36-2.84-1.41L354,228.46l1.78-1.06,2.49.35,2.49,2.47,2.13-2.82,5.33.35,5.69-7.05,1.78,1.77,2.14-1.06,1.06,1.76,3.56.35,1.42-1.41,1.42,1.41,5-1.05,5-2.82,1.78-7.4h1.78l1.06,2.82,5-1.06h3.56l-.71,2.47-1.07,2.46-2.49,4.58-1.07,6.35-5.33,3.52-.71,6.34,1.78,2.47v2.11l-2.49,4.94h-4.62l-7.12-1.06-2.84.71,2.84,2.46.71,2.82-1.77.71-.72-1.77-.35-1.41-2.13-.35-2.49,2.47,1.42,1.41V263l-1.78,2.12-.71,7h-2.49l-1.78-3.87-2.84-2.47,1.42-1.41-2.85.71H365L364,263l-2.14.35h.36V270l1.42,2.11-1.78,1.41-1.77-.7L359,271.1,355.8,269l-3.2-5.28Z" transform="translate(-16.64 -22.77)"
+                    onmouseover="document.querySelector('#Maulvibazar').style.fill= 'red'; showMapData('Maulvibazar')"
+                    onmouseout="document.querySelector('#Maulvibazar').style.fill= '#17520d'";/>
+
+                
+                   
+                    
+                    <path id="path3159" class="land" d="M117.62,522.8a1,1,0,0,1-.44-.76c0-.46.17-.46.64,0a1.08,1.08,0,0,1,.36.75c0,.22,0,.39-.05.39a2.56,2.56,0,0,1-.51-.39Z" transform="translate(-16.64 -22.77)"/>
+                  </g></svg>
+
+                
+            </div>
+        </div>
+    </div>
+
+	<script>
+ function showMapData(District) {
+        console.log(District);
+        fetch("./district.json")
+          .then((e) => {
+            return e.json();
+          })
+          .then((data) => {
+            for (var i in data.Sheet1) {
+              if (data.Sheet1[i].District == District) {
+                document.querySelector(".District").innerHTML = District;
+            
+                document.querySelector(".caseFigConfirmed").innerHTML =
+                  data.Sheet1[i].PercentElder;
+                document.querySelector(".caseFigRecod").innerHTML =
+                  data.Sheet1[i].Stayput;
+
+				  document.querySelector(".caseFigtotal").innerHTML =
+                  data.Sheet1[i].TotalPopdis;
+            
+              }
+            }
+          });
+      }
+	  </script>
+</body>
+</html>
